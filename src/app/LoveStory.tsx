@@ -119,20 +119,20 @@ export default function ValentineJourneySafe() {
   };
 
   const timelineData = [
-    { src: "/1.jpeg", date: "Aug 14, 2021", caption: "The First Meet Up ☕️" },
-    { src: "/2.jpeg", date: "Sep 20, 2021", caption: "Our first cosy pic" },
+    { src: "/1.jpeg", date: "16 Dec, 2025", caption: "The First Meet Up ☕️" },
+    { src: "/2.jpeg", date: "10 Jan, 2026", caption: "Our first cosy pic" },
     {
       src: "/3.jpeg",
-      date: "Nov 02, 2021",
+      date: "15 Jan, 2026",
       caption: "Our first theatre date 🎭",
     },
     {
       src: "/4.jpeg",
-      date: "Dec 25, 2021",
+      date: "24 Jan, 2026",
       caption: "My favourite picture of you. You areeeeeee myyy 🎤",
     },
-    { src: "/5.jpeg", date: "Feb 14, 2022", caption: "our first baecation 🏖️" },
-    { src: "/6.jpeg", date: "July 2022", caption: "Our first horse riding" },
+    { src: "/5.jpeg", date: "7 Feb, 2026", caption: "our first baecation 🏖️" },
+    { src: "/6.jpeg", date: "8 Feb, 2026", caption: "Our first horse riding" },
   ];
 
   return (
@@ -307,20 +307,13 @@ export default function ValentineJourneySafe() {
                 </h2>
 
                 <div className="grid grid-cols-1 gap-6 text-left mb-12">
+                
                   <div className="flex justify-between items-center p-4 bg-rose-50/50 rounded-2xl">
                     <span className="text-sm font-semibold text-slate-500 uppercase tracking-wider">
-                      Distance Traveled
+                      0/20 Years
                     </span>
-                    <span className="text-xl font-bold text-rose-600">
-                      [X] km 🚗
-                    </span>
-                  </div>
-                  <div className="flex justify-between items-center p-4 bg-rose-50/50 rounded-2xl">
-                    <span className="text-sm font-semibold text-slate-500 uppercase tracking-wider">
-                      Concerts Attended
-                    </span>
-                    <span className="text-xl font-bold text-rose-600">
-                      [X] 🎸
+                    <span className="text-xl font-bold text-rose-600 animate-pulse">
+                      loading...
                     </span>
                   </div>
                   <div className="p-6 bg-gradient-to-br from-rose-50 to-white rounded-2xl border border-rose-100 text-center">
