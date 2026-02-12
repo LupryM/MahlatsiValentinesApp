@@ -32,3 +32,6 @@ export default function RootLayout({
     </html>
   );
 }
+<head>
+  <link rel="icon" href="/4.jpeg" type="image/jpeg" />
+</head>;

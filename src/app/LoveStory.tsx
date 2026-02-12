@@ -91,6 +91,11 @@ const TimelineItem = ({ src, date, caption, index }: TimelineItemProps) => {
 
 export default function ValentineJourneySafe() {
   const [step, setStep] = useState(1);
+
+  // Scroll to top when step changes
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [step]);
   const [noPos, setNoPos] = useState({ x: 0, y: 0 });
   const [surprisePos, setSurprisePos] = useState({ x: 0, y: 0 });
   const [surpriseRevealed, setSurpriseRevealed] = useState(false);
@@ -161,7 +166,7 @@ export default function ValentineJourneySafe() {
                 <div className="relative translate-y-1/2">
                   <div className="w-24 h-24 rounded-full border-4 border-white shadow-md overflow-hidden bg-rose-100 relative">
                     <Image
-                     src="/4.jpeg"
+                      src="/4.jpeg"
                       alt="Mama Ona"
                       fill
                       className="object-cover"
