@@ -161,7 +161,7 @@ export default function ValentineJourneySafe() {
                 <div className="relative translate-y-1/2">
                   <div className="w-24 h-24 rounded-full border-4 border-white shadow-md overflow-hidden bg-rose-100 relative">
                     <Image
-                      src="/mama_ona_profile.jpg"
+                     src="/4.jpeg"
                       alt="Mama Ona"
                       fill
                       className="object-cover"
