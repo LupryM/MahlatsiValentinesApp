@@ -307,7 +307,6 @@ export default function ValentineJourneySafe() {
                 </h2>
 
                 <div className="grid grid-cols-1 gap-6 text-left mb-12">
-                
                   <div className="flex justify-between items-center p-4 bg-rose-50/50 rounded-2xl">
                     <span className="text-sm font-semibold text-slate-500 uppercase tracking-wider">
                       0/20 Years
@@ -327,45 +326,20 @@ export default function ValentineJourneySafe() {
                 </div>
 
                 <div className="relative h-24 flex flex-col items-center justify-center">
-                  <AnimatePresence mode="wait">
-                    {!surpriseRevealed ? (
-                      <motion.div
-                        key="surprise-btn-area"
-                        className="flex flex-col items-center"
-                      >
-                        <p className="text-[10px] text-slate-300 uppercase tracking-[0.2em] mb-4 italic">
-                          One last surprise...
-                        </p>
-                        <motion.button
-                          animate={{ x: surprisePos.x, y: surprisePos.y }}
-                          onMouseEnter={moveSurpriseButton}
-                          onClick={() => {
-                            if (surpriseCount >= 5) setSurpriseRevealed(true);
-                          }}
-                          className="bg-slate-900 text-white px-8 py-3 rounded-xl font-bold shadow-lg shadow-slate-200 transition-colors active:scale-95"
-                        >
-                          {surpriseCount >= 5
-                            ? "You caught it! Click me"
-                            : "Click for Surprise"}
-                        </motion.button>
-                      </motion.div>
-                    ) : (
-                      <motion.div
-                        key="final-note"
-                        initial={{ scale: 0, opacity: 0 }}
-                        animate={{ scale: 1, opacity: 1 }}
-                        className="space-y-4"
-                      >
-                        <p className="text-2xl font-serif font-bold text-rose-600 leading-tight">
-                          I really like what we’re building <br /> more than
-                          words can explain.
-                        </p>
-                        <p className="text-xl font-handwriting text-slate-500 italic">
-                          Slowly but surely, Mama Ona ❤️
-                        </p>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
+                  <motion.div
+                    key="final-note"
+                    initial={{ scale: 0, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    className="space-y-4"
+                  >
+                    <p className="text-2xl font-serif font-bold text-rose-600 leading-tight">
+                      I really like what we’re building <br /> more than words
+                      can explain.
+                    </p>
+                    <p className="text-xl font-handwriting text-slate-500 italic">
+                      Slowly but surely, Mama Ona ❤️
+                    </p>
+                  </motion.div>
                 </div>
               </div>
 
