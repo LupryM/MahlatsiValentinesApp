@@ -195,16 +195,20 @@ export default function ValentineJourneySafe() {
                 </div>
 
                 <div className="text-sm text-slate-500 leading-relaxed space-y-4 mb-10 max-w-[300px]">
+                  <p>Kgaugelo Makoe “Mama Ona “</p>
                   <p>
-                    From the moment our paths crossed, my world became brighter.
-                    You are my best friend, my confidant, and the love of my
-                    life.
+                    I’m sure you thought I forgot to ask you to be my valentine,
+                    but oshapile fatshe unfortunately 😆
                   </p>
                   <p>
-                    Every day with you is a gift I cherish. As we celebrate love
-                    today, I have just one question that could make me the
-                    happiest person alive...
+                    From the first concert we met until coastline at harties 🌊,
+                    every moment with you has felt like a blast.
+                    <br />
+                    This is how I perfectly imagined romance to feel like.
                   </p>
+                  <p>I wish you could see yourself the way I see you ✨</p>
+                  <p>With that being said will you be my valentine ?</p>
+                  <p className="font-bold">Love. Papa Ona ❤️</p>
                 </div>
 
                 <h2 className="text-xl font-serif font-bold text-slate-800 mb-8">
