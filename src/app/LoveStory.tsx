@@ -195,7 +195,7 @@ export default function ValentineJourneySafe() {
                 </div>
 
                 <div className="text-sm text-slate-500 leading-relaxed space-y-4 mb-10 max-w-[300px]">
-                  <p>Kgaugelo Makoe “Mama Ona “</p>
+                  <p>Kgaogelo Makoe “Mama Ona “</p>
                   <p>
                     I’m sure you thought I forgot to ask you to be my valentine,
                     but oshapile fatshe unfortunately 😆
