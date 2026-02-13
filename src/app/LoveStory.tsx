@@ -42,7 +42,7 @@ const TimelineItem = ({ src, caption, index }: TimelineItemProps) => {
       {/* Central Dot */}
       <div className="hidden md:block absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 w-4 h-4 bg-rose-500 rounded-full border-4 border-white shadow-sm z-10" />
 
-      {/* Spacer Div (Replaces where the date used to be) */}
+      {/* Spacer Div (Keeps the zig-zag) */}
       <div className={`hidden md:block md:w-[45%] ${isEven ? "order-1" : "order-2"}`} />
 
       {/* Picture Container */}
@@ -189,6 +189,31 @@ export default function ValentineJourneySafe() {
                     No, maybe later
                   </motion.button>
                 </div>
+              </div>
+
+              {/* RESTORED: Journey Preview Footer */}
+              <div className="bg-slate-50/50 p-6 border-t border-slate-50 flex flex-col items-center">
+                <p className="text-[9px] text-slate-400 uppercase tracking-widest mb-4">
+                  A journey waiting for you...
+                </p>
+                <div className="flex gap-3 mb-2">
+                  {timelineData.slice(0, 3).map((item, i) => (
+                    <div
+                      key={i}
+                      className="w-12 h-12 rounded-xl bg-slate-200 overflow-hidden border-2 border-white shadow-sm relative"
+                    >
+                      <Image
+                        src={item.src}
+                        alt="thumb"
+                        fill
+                        className="object-cover grayscale-[50%]"
+                      />
+                    </div>
+                  ))}
+                </div>
+                <p className="text-[9px] font-bold text-rose-300 uppercase tracking-tighter mt-2 animate-pulse">
+                  Say Yes to unlock our story
+                </p>
               </div>
             </div>
           </motion.section>
